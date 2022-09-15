@@ -30,12 +30,10 @@
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtID = new System.Windows.Forms.TextBox();
-            this.txtTelefon = new System.Windows.Forms.TextBox();
             this.txtAdiSoyadi = new System.Windows.Forms.TextBox();
             this.dateTimeTarih = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnEkle = new System.Windows.Forms.Button();
             this.btnSil = new System.Windows.Forms.Button();
@@ -61,13 +59,6 @@
             this.txtID.TabIndex = 1;
             this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
             // 
-            // txtTelefon
-            // 
-            this.txtTelefon.Location = new System.Drawing.Point(85, 195);
-            this.txtTelefon.Name = "txtTelefon";
-            this.txtTelefon.Size = new System.Drawing.Size(140, 20);
-            this.txtTelefon.TabIndex = 2;
-            // 
             // txtAdiSoyadi
             // 
             this.txtAdiSoyadi.Location = new System.Drawing.Point(85, 169);
@@ -78,7 +69,7 @@
             // dateTimeTarih
             // 
             this.dateTimeTarih.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeTarih.Location = new System.Drawing.Point(84, 221);
+            this.dateTimeTarih.Location = new System.Drawing.Point(85, 196);
             this.dateTimeTarih.Name = "dateTimeTarih";
             this.dateTimeTarih.Size = new System.Drawing.Size(140, 20);
             this.dateTimeTarih.TabIndex = 6;
@@ -101,19 +92,10 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Adı Soyadı";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 203);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 13);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Telefon";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 227);
+            this.label4.Location = new System.Drawing.Point(13, 202);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(31, 13);
             this.label4.TabIndex = 12;
@@ -162,12 +144,10 @@
             this.Controls.Add(this.btnSil);
             this.Controls.Add(this.btnEkle);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dateTimeTarih);
             this.Controls.Add(this.txtAdiSoyadi);
-            this.Controls.Add(this.txtTelefon);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.dataGridView1);
             this.Name = "frmMusteriListeleme";
@@ -184,12 +164,10 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.TextBox txtTelefon;
         private System.Windows.Forms.TextBox txtAdiSoyadi;
         private System.Windows.Forms.DateTimePicker dateTimeTarih;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnEkle;
         private System.Windows.Forms.Button btnSil;

@@ -32,12 +32,8 @@
             this.txtMusteriID = new System.Windows.Forms.TextBox();
             this.txtAdiSoyadi = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtTelefon = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.txtPlaka = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtAciklama = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -60,7 +56,7 @@
             // 
             // txtMusteriID
             // 
-            this.txtMusteriID.Location = new System.Drawing.Point(89, 24);
+            this.txtMusteriID.Location = new System.Drawing.Point(84, 23);
             this.txtMusteriID.Name = "txtMusteriID";
             this.txtMusteriID.Size = new System.Drawing.Size(100, 20);
             this.txtMusteriID.TabIndex = 1;
@@ -82,25 +78,9 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Adı Soyadı";
             // 
-            // txtTelefon
-            // 
-            this.txtTelefon.Location = new System.Drawing.Point(84, 80);
-            this.txtTelefon.Name = "txtTelefon";
-            this.txtTelefon.Size = new System.Drawing.Size(100, 20);
-            this.txtTelefon.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(25, 83);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Telefon";
-            // 
             // txtPlaka
             // 
-            this.txtPlaka.Location = new System.Drawing.Point(84, 111);
+            this.txtPlaka.Location = new System.Drawing.Point(84, 77);
             this.txtPlaka.Name = "txtPlaka";
             this.txtPlaka.Size = new System.Drawing.Size(100, 20);
             this.txtPlaka.TabIndex = 7;
@@ -108,27 +88,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(25, 114);
+            this.label4.Location = new System.Drawing.Point(25, 80);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(34, 13);
             this.label4.TabIndex = 6;
             this.label4.Text = "Plaka";
-            // 
-            // txtAciklama
-            // 
-            this.txtAciklama.Location = new System.Drawing.Point(309, 111);
-            this.txtAciklama.Name = "txtAciklama";
-            this.txtAciklama.Size = new System.Drawing.Size(100, 20);
-            this.txtAciklama.TabIndex = 15;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(250, 118);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 13);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Açıklama";
             // 
             // label6
             // 
@@ -225,15 +189,11 @@
             this.Controls.Add(this.comboParkYeri);
             this.Controls.Add(this.comboTur);
             this.Controls.Add(this.comboMarka);
-            this.Controls.Add(this.txtAciklama);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtPlaka);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtTelefon);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.txtAdiSoyadi);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtMusteriID);
@@ -253,12 +213,8 @@
         private System.Windows.Forms.TextBox txtMusteriID;
         private System.Windows.Forms.TextBox txtAdiSoyadi;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtTelefon;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtPlaka;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtAciklama;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;

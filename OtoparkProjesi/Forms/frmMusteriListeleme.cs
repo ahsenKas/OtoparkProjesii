@@ -44,7 +44,7 @@ namespace OtoparkProjesi.Forms
             foreach (var item in ara)
             {
                 txtAdiSoyadi.Text = item.AdiSoyadi;
-                txtTelefon.Text = item.Telefon;
+               
                 dateTimeTarih.Value = item.Tarih;
 
             }
@@ -59,7 +59,7 @@ namespace OtoparkProjesi.Forms
         {
             var ekle = new Musteri();
             ekle.AdiSoyadi = txtAdiSoyadi.Text;
-            ekle.Telefon = txtTelefon.Text;
+       
             ekle.Tarih = dateTimeTarih.Value;
             db.Musteri.Add(ekle);
             db.SaveChanges();
@@ -85,7 +85,7 @@ namespace OtoparkProjesi.Forms
             int id = int.Parse(txtID.Text);
             var guncelle = db.Musteri.FirstOrDefault(x => x.ID == id);
             guncelle.AdiSoyadi = txtAdiSoyadi.Text;
-            guncelle.Telefon = txtTelefon.Text;
+      
             guncelle.Tarih = dateTimeTarih.Value;
             db.SaveChanges();
             MessageBox.Show("Güncelleme işlemi başarılı", "Güncelle", MessageBoxButtons.OK, MessageBoxIcon.Information);

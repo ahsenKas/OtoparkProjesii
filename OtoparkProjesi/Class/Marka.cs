@@ -13,7 +13,6 @@ namespace OtoparkProjesi.Class
         public int ID { get; set; }
         [Column(TypeName ="varchar")]
         [StringLength(30)]
-
         public string MarkaAdi { get; set; }
 
         public virtual ICollection<Tur> tur { get; set; }

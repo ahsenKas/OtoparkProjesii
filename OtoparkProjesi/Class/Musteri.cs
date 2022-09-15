@@ -15,9 +15,11 @@ namespace OtoparkProjesi.Class
         [Column(TypeName = "varchar")]
         [StringLength(20)]
         public string AdiSoyadi { get; set; }
+
         [Column(TypeName = "varchar")]
         [StringLength(20)]
-        public string Telefon { get; set; }
+        public string PlakaID { get; set; }
+
         public DateTime Tarih { get; set; }
         public virtual ICollection<AracParkBilgileri> AracParkBilgileris { get; set; }
         public virtual ICollection<Ucret> Ucrets { get; set; }

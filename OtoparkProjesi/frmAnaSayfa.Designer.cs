@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.müşterilerTool = new System.Windows.Forms.ToolStripMenuItem();
-            this.müşteriDüzenleTool = new System.Windows.Forms.ToolStripMenuItem();
             this.müşteriListeleTool = new System.Windows.Forms.ToolStripMenuItem();
             this.araçİşlemleriTool = new System.Windows.Forms.ToolStripMenuItem();
             this.araçOtoparkGirişiTool = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,25 +61,18 @@
             this.saatToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(797, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // müşterilerTool
             // 
             this.müşterilerTool.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.müşteriDüzenleTool,
             this.müşteriListeleTool});
             this.müşterilerTool.Name = "müşterilerTool";
             this.müşterilerTool.Size = new System.Drawing.Size(72, 20);
             this.müşterilerTool.Text = "Müşteriler";
             this.müşterilerTool.Click += new System.EventHandler(this.müşterilerTool_Click);
-            // 
-            // müşteriDüzenleTool
-            // 
-            this.müşteriDüzenleTool.Name = "müşteriDüzenleTool";
-            this.müşteriDüzenleTool.Size = new System.Drawing.Size(180, 22);
-            this.müşteriDüzenleTool.Text = "Müşteri Düzenle";
             // 
             // müşteriListeleTool
             // 
@@ -183,7 +175,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(797, 450);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmAnaSayfa";
@@ -208,7 +200,6 @@
         private System.Windows.Forms.ToolStripMenuItem OtoparkYerleriTool;
         private System.Windows.Forms.ToolStripMenuItem çıkışTool;
         private System.Windows.Forms.ToolStripMenuItem müşterilerTool;
-        private System.Windows.Forms.ToolStripMenuItem müşteriDüzenleTool;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem müşteriListeleTool;
         private System.Windows.Forms.ToolStripMenuItem aBCToolStripMenuItem;

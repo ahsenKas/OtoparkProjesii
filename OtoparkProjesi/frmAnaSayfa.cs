@@ -65,5 +65,10 @@ namespace OtoparkProjesi
         {
 
         }
+
+        private void müşteriDüzenleTool_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

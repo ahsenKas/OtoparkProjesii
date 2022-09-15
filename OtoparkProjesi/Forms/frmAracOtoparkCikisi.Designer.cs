@@ -55,8 +55,6 @@
             this.lblGirisTarihi = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.panelBilgiler = new System.Windows.Forms.Panel();
-            this.txtAciklama = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
             this.comboSaatUcreti = new System.Windows.Forms.ComboBox();
             this.comboParkYeri = new System.Windows.Forms.ComboBox();
             this.comboTur = new System.Windows.Forms.ComboBox();
@@ -67,12 +65,10 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.txtTelefon = new System.Windows.Forms.TextBox();
             this.txtAdiSoyadi = new System.Windows.Forms.TextBox();
             this.txtMusteriID = new System.Windows.Forms.TextBox();
             this.txtID = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panelArama.SuspendLayout();
@@ -351,8 +347,6 @@
             // 
             // panelBilgiler
             // 
-            this.panelBilgiler.Controls.Add(this.txtAciklama);
-            this.panelBilgiler.Controls.Add(this.label14);
             this.panelBilgiler.Controls.Add(this.comboSaatUcreti);
             this.panelBilgiler.Controls.Add(this.comboParkYeri);
             this.panelBilgiler.Controls.Add(this.comboTur);
@@ -363,12 +357,10 @@
             this.panelBilgiler.Controls.Add(this.label11);
             this.panelBilgiler.Controls.Add(this.label12);
             this.panelBilgiler.Controls.Add(this.label13);
-            this.panelBilgiler.Controls.Add(this.txtTelefon);
             this.panelBilgiler.Controls.Add(this.txtAdiSoyadi);
             this.panelBilgiler.Controls.Add(this.txtMusteriID);
             this.panelBilgiler.Controls.Add(this.txtID);
             this.panelBilgiler.Controls.Add(this.label9);
-            this.panelBilgiler.Controls.Add(this.label8);
             this.panelBilgiler.Controls.Add(this.label7);
             this.panelBilgiler.Controls.Add(this.label6);
             this.panelBilgiler.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -377,29 +369,13 @@
             this.panelBilgiler.Size = new System.Drawing.Size(647, 197);
             this.panelBilgiler.TabIndex = 2;
             // 
-            // txtAciklama
-            // 
-            this.txtAciklama.Location = new System.Drawing.Point(93, 116);
-            this.txtAciklama.Name = "txtAciklama";
-            this.txtAciklama.Size = new System.Drawing.Size(121, 20);
-            this.txtAciklama.TabIndex = 25;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(25, 123);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(50, 13);
-            this.label14.TabIndex = 24;
-            this.label14.Text = "Aciklama";
-            // 
             // comboSaatUcreti
             // 
             this.comboSaatUcreti.FormattingEnabled = true;
             this.comboSaatUcreti.Items.AddRange(new object[] {
             "7",
             "1"});
-            this.comboSaatUcreti.Location = new System.Drawing.Point(365, 115);
+            this.comboSaatUcreti.Location = new System.Drawing.Point(95, 90);
             this.comboSaatUcreti.Name = "comboSaatUcreti";
             this.comboSaatUcreti.Size = new System.Drawing.Size(121, 21);
             this.comboSaatUcreti.TabIndex = 23;
@@ -434,7 +410,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(295, 125);
+            this.label15.Location = new System.Drawing.Point(25, 100);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(60, 13);
             this.label15.TabIndex = 18;
@@ -483,13 +459,6 @@
             this.label13.TabIndex = 8;
             this.label13.Text = "Marka";
             // 
-            // txtTelefon
-            // 
-            this.txtTelefon.Location = new System.Drawing.Point(93, 89);
-            this.txtTelefon.Name = "txtTelefon";
-            this.txtTelefon.Size = new System.Drawing.Size(121, 20);
-            this.txtTelefon.TabIndex = 7;
-            // 
             // txtAdiSoyadi
             // 
             this.txtAdiSoyadi.Location = new System.Drawing.Point(93, 64);
@@ -519,15 +488,6 @@
             this.label9.Size = new System.Drawing.Size(57, 13);
             this.label9.TabIndex = 3;
             this.label9.Text = "Adı Soyadı";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(23, 96);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 13);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "Telefon";
             // 
             // label7
             // 
@@ -584,7 +544,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelIslemler;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label16;
@@ -598,7 +557,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox txtTelefon;
         private System.Windows.Forms.TextBox txtAdiSoyadi;
         private System.Windows.Forms.TextBox txtMusteriID;
         private System.Windows.Forms.TextBox txtID;
@@ -615,8 +573,6 @@
         private System.Windows.Forms.Button btnGuncelle;
         private System.Windows.Forms.Button btnAracCikisi;
         private System.Windows.Forms.Panel panelBilgiler;
-        private System.Windows.Forms.TextBox txtAciklama;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button btnTemizle;
     }
 }

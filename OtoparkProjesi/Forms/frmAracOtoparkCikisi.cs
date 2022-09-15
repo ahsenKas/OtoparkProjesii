@@ -124,7 +124,7 @@ namespace OtoparkProjesi.Forms
                          join z in db.Tur on x.TurID equals z.ID
                          join
                          w in db.AracParkYerleri on x.ParkyeriID equals w.ID
-                         select new { x.ID, x.MusteriID, x.AdiSoyadi, x.Telefon, x.Plaka, x.Aciklama,x.GirisTarihi, 
+                         select new { x.ID, x.MusteriID, x.AdiSoyadi, x.Plaka, x.GirisTarihi, 
                          y.MarkaAdi, z.tur, w.ParkYerleri
                          }).Where(ara => ara.ID.ToString() == txtIDAra.Text).ToList();
 
@@ -133,12 +133,12 @@ namespace OtoparkProjesi.Forms
                 txtID.Text = item.ID.ToString();
                 txtMusteriID.Text = item.MusteriID.ToString();
                 txtAdiSoyadi.Text = item.AdiSoyadi;
-                txtTelefon.Text = item.Telefon;
+                
                 comboMarka.Text = item.MarkaAdi;
                 comboTur.Text = item.tur;
                 txtPlaka.Text=item.Plaka;
                 comboParkYeri.Text = item.ParkYerleri;
-                txtAciklama.Text = item.Aciklama;
+               
                 lblGirisTarihi.Text = item.GirisTarihi.ToString();
                 UcretHesapla();
             }
@@ -171,7 +171,7 @@ namespace OtoparkProjesi.Forms
                              x.ID,
                              x.MusteriID,
                              x.AdiSoyadi,
-                             x.Telefon,
+                             
                              x.Plaka,
                              x.GirisTarihi,
                              y.MarkaAdi,
@@ -184,7 +184,7 @@ namespace OtoparkProjesi.Forms
                 txtID.Text = item.ID.ToString();
                 txtMusteriID.Text = item.MusteriID.ToString();
                 txtAdiSoyadi.Text = item.AdiSoyadi;
-                txtTelefon.Text = item.Telefon;
+               
                 comboMarka.Text = item.MarkaAdi;
                 comboTur.Text = item.tur;
                 txtPlaka.Text = item.Plaka;
@@ -220,7 +220,7 @@ namespace OtoparkProjesi.Forms
                                     x.ID,
                                     x.MusteriID,
                                     x.AdiSoyadi,
-                                    x.Telefon,
+
                                     x.Plaka,
                                     x.GirisTarihi,
                                     y.MarkaAdi,
@@ -233,7 +233,7 @@ namespace OtoparkProjesi.Forms
                 txtID.Text = item.ID.ToString();
                 txtMusteriID.Text = item.MusteriID.ToString();
                 txtAdiSoyadi.Text = item.AdiSoyadi;
-                txtTelefon.Text = item.Telefon;
+              
                 comboMarka.Text = item.MarkaAdi;
                 comboTur.Text = item.tur;
                 txtPlaka.Text = item.Plaka;
@@ -259,7 +259,7 @@ namespace OtoparkProjesi.Forms
                                     x.ID,
                                     x.MusteriID,
                                     x.AdiSoyadi,
-                                    x.Telefon,
+                                
                                     x.Plaka,
                                     x.GirisTarihi,
                                     y.MarkaAdi,
@@ -272,7 +272,7 @@ namespace OtoparkProjesi.Forms
                 txtID.Text = item.ID.ToString();
                 txtMusteriID.Text = item.MusteriID.ToString();
                 txtAdiSoyadi.Text = item.AdiSoyadi;
-                txtTelefon.Text = item.Telefon;
+               
                 comboMarka.Text = item.MarkaAdi;
                 comboTur.Text = item.tur;
                 txtPlaka.Text = item.Plaka;
@@ -297,7 +297,7 @@ namespace OtoparkProjesi.Forms
                                     x.ID,
                                     x.MusteriID,
                                     x.AdiSoyadi,
-                                    x.Telefon,
+                                    
                                     x.Plaka,
                                     x.GirisTarihi,
                                     y.MarkaAdi,
@@ -310,7 +310,7 @@ namespace OtoparkProjesi.Forms
                 txtID.Text = item.ID.ToString();
                 txtMusteriID.Text = item.MusteriID.ToString();
                 txtAdiSoyadi.Text = item.AdiSoyadi;
-                txtTelefon.Text = item.Telefon;
+             
                 comboMarka.Text = item.MarkaAdi;
                 comboTur.Text = item.tur;
                 txtPlaka.Text = item.Plaka;
@@ -457,7 +457,7 @@ namespace OtoparkProjesi.Forms
                 ekle.saatUcreti = decimal.Parse(comboSaatUcreti.Text);
                 ekle.Sure = decimal.Parse(lblSure.Text);
                 ekle.Tutar = decimal.Parse(lblUcret.Text);
-                ekle.Aciklama = txtAciklama.Text;
+               
                 ekle.GirisTarihi = DateTime.Parse(lblGirisTarihi.Text);
                 ekle.CıkısTarihi = DateTime.Parse(lblCikisTarihi.Text);
                 db.Ucret.Add(ekle);
@@ -494,7 +494,7 @@ namespace OtoparkProjesi.Forms
             guncelle.MarkaID = (int)comboMarka.SelectedValue;
             guncelle.TurID = (int)comboTur.SelectedValue;
             guncelle.Plaka = txtPlaka.Text;
-            guncelle.Aciklama = txtAciklama.Text;
+           
             db.SaveChanges();
 
             MessageBox.Show("Araç bilgiler güncellendi", "", MessageBoxButtons.OK, MessageBoxIcon.Information);

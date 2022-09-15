@@ -51,12 +51,12 @@ namespace OtoparkProjesi.Forms
                 foreach (var item in MusteriGetir)
                 {
                     txtAdiSoyadi.Text = item.AdiSoyadi;
-                    txtTelefon.Text = item.Telefon;
+                    
                 }
                 if (txtMusteriID.Text == "")
                 {
                     txtAdiSoyadi.Text = "";
-                    txtTelefon.Text = "";
+                  
                 }
             }
             catch (Exception)
@@ -87,12 +87,12 @@ namespace OtoparkProjesi.Forms
             var ekle = new AracParkBilgileri();
             ekle.MusteriID = int.Parse(txtMusteriID.Text);
             ekle.AdiSoyadi = txtAdiSoyadi.Text;
-            ekle.Telefon = txtTelefon.Text;
+          
             ekle.MarkaID = (int)comboMarka.SelectedValue;
             ekle.TurID = (int)comboTur.SelectedValue;
             ekle.Plaka = txtPlaka.Text;
             ekle.ParkyeriID= (int)comboParkYeri.SelectedValue;
-            ekle.Aciklama = txtAciklama.Text;
+           
             ekle.GirisTarihi = DateTime.Now;
             db.AracParkBilgileri.Add(ekle);
             db.SaveChanges();
@@ -106,5 +106,7 @@ namespace OtoparkProjesi.Forms
             btnTemizle.PerformClick();
             ParkYeriYenile();
         }
+
+       
     }
 }
